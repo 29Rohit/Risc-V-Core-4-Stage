@@ -72,15 +72,10 @@ Under the risc-v toolchain,
 
 Test Case for the above commands [(Summation of 1 to 9)](codes/sum1ton.c),
 
-  * Below image shows the disassembled file `sum1ton.o` with `main` function highlighted.
-
-    ![disassemble](Images/disassemble.png)
-
+  
   * To view the registers we can use command as `reg <core> <register name>`. 
 
-    Below image shows how to debug the disassembled file using Spike simulator where a1,a2 register are checked before and after the instructions got executed.
-
-    ![spike_debug](Images/spike_debug.png)
+   
 
 # Introduction to ABI
 
@@ -93,18 +88,7 @@ So, it is system call interface used by the application program to access the re
 
 Test Case for ABI Call: [Summation of 1 to 9](codes/1to9_custom.c) through [assembly code](codes/load.S),
 
-  * Below image shows the `main` function.
-
-    ![main_ABI](Images/main_ABI.png)
-
-  * Below image shows 2 sections from [load.S](codes/load.S) (one is load and other is loop).
-
-    ![load_ABI](Images/load_ABI.png)
-
-  * Below image shows the output of Summation from 1 to 9.
-
-    ![compile_ABI](Images/compile_ABI.png)
-
+  
 # Digital Logic with TL-Verilog and Makerchip
 
 [Makerchip](https://makerchip.com/) is a free online environment for developing high-quality integrated circuits. You can code, compile, simulate, and debug Verilog designs, all from your browser. Your code, block diagrams, and waveforms are tightly integrated.
