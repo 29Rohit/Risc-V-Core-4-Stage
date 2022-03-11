@@ -74,21 +74,28 @@ Test Case for the above commands [(Summation of 1 to 9)](codes/sum1ton.c),
 
   
   * To view the registers we can use command as `reg <core> <register name>`. 
+  
+  Below image shows how to debug the disassembled file using Spike simulator where a1,a2 register are checked before and after the instructions got executed.
 
-   
+![1](https://user-images.githubusercontent.com/20563301/157902045-a095ebe8-c818-4b7b-ab03-d000155a6f5b.PNG)
+
 
 # Introduction to ABI
 
 An Application Binary Interface is a set of rules enforced by the Operating System on a specific architecture. So, Linker converts relocatable machine code to absolute machine code via ABI interface specific to the architecture of machine.
 
 So, it is system call interface used by the application program to access the registers specific to architecture. Overhere the architecture is RISC-V, so to access 32 registers of RISC-V below is the table which shows the calling convention (ABI name) given to registers for the application programmer to use.
-[(Image source)](https://riscv.org/wp-content/uploads/2015/01/riscv-calling.pdf)
 
-![calling_convention](Images/calling_convetion.png)
 
-Test Case for ABI Call: [Summation of 1 to 9](codes/1to9_custom.c) through [assembly code](codes/load.S),
+![1](https://user-images.githubusercontent.com/20563301/157898348-d9e01341-3e50-4970-a814-e02b840e9f61.PNG)
 
-  
+ * Below image shows 2 sections from [load.S](codes/load.S) (one is load and other is loop).
+
+![3](https://user-images.githubusercontent.com/20563301/157901111-7914bdd2-3af0-41e1-bc23-7d0987b0c297.PNG)
+
+
+ 
+
 # Digital Logic with TL-Verilog and Makerchip
 
 [Makerchip](https://makerchip.com/) is a free online environment for developing high-quality integrated circuits. You can code, compile, simulate, and debug Verilog designs, all from your browser. Your code, block diagrams, and waveforms are tightly integrated.
@@ -101,7 +108,8 @@ Starting with basic example in combinational logic is an inverter. To write the 
 
 Below is snapshot of Combinational Calculator.
 
-![Combinational-Calculator](Images/Combinational_Calculator.png)
+![combo calculator](https://user-images.githubusercontent.com/20563301/157898685-29a16839-d598-40d2-b9e0-d27bc795b5f3.PNG)
+
 
 ## [Sequential logic](codes/Sequential_Calculator.tlv)
 
@@ -109,7 +117,8 @@ Starting with basic example in sequential logic is Fibonacci Series with reset. 
 
 Below is snapshot of Sequential Calculator which remembers the last result, and uses it for the next calculation.
 
-![Sequential-Calculator](Images/Sequential_Calculator.png)
+![seq calc op](https://user-images.githubusercontent.com/20563301/157899127-396a00fb-2ae7-4b3c-a2b1-736f4b349120.PNG)
+
 
 ## [Pipelined logic](codes/Cycle_Calculator.tlv)
 
