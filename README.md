@@ -126,7 +126,8 @@ Timing abstract powerful feature of TL-Verilog which converts a code into pipeli
 
 Below is snapshot of 2-cycle calculator which clears the output alternatively and output of given inputs are observed at the next cycle.
 
-![Cycle-Calculator](Images/Cycle_Calculator.png)
+![1](https://user-images.githubusercontent.com/20563301/158003722-58d3a543-3e3a-4ca1-9543-2430d21842ee.PNG)
+
 
 ## [Validity](codes/Cycle_Calculator_Validity.tlv)
 
@@ -134,7 +135,8 @@ Validity is TL-verilog means signal indicates validity of transaction and descri
 
 Below is snapshot of 2-cycle calculator with validity. 
 
-![Cycle-Calculator-Validity](Images/Cycle_Calculator_validity.png)
+![2](https://user-images.githubusercontent.com/20563301/158003728-eaa423d4-ca0a-45d4-b43f-989d21f7759e.PNG)
+
 
 # Basic RISC-V CPU micro-architecture
 
@@ -149,7 +151,8 @@ During Fetch Stage, processor fetches the instruction from the IM pointed by add
 
 Below is snapshot from Makerchip IDE after performing the Fetch Stage.
 
-![Fetch](Images/Fetch.png)
+![3](https://user-images.githubusercontent.com/20563301/158003733-9415de86-6f94-493a-b7bb-1c5fb14ba51f.PNG)
+
 
 ## [Decode](codes/Decode.tlv)
 
@@ -165,7 +168,8 @@ Instruction Format includes Opcode, immediate value, source address, destination
 
 Below is snapshot from Makerchip IDE after performing the Decode Stage.
 
-![Decode](Images/Decode.png)
+![4](https://user-images.githubusercontent.com/20563301/158003740-658c6c1c-c06a-45ca-934e-ebfc7f4c97b4.PNG)
+
 
 ## [Register File Read and Write](codes/Register_File_Read.tlv)
 
@@ -185,9 +189,10 @@ Outputs:
 
 Below is snapshot from Makerchip IDE after performing the Register File Read followed by Register File Write.
 
-![Register-File-Read](Images/Register_File_Read.png)
+![5](https://user-images.githubusercontent.com/20563301/158003759-7be224d9-b2c0-4d52-8d75-b6ac0da8abd4.PNG)
 
-![Register-File-Write](Images/Register_File_Write.png)
+
+![6](https://user-images.githubusercontent.com/20563301/158003763-d058cc61-8445-4a05-a11a-57c47dae286b.PNG)
 
 
 ## [Execute](codes/ALU.tlv)
@@ -196,7 +201,8 @@ During the Execute Stage, both the operands perform the operation based on Opcod
 
 Below is snapshot from Makerchip IDE after performing the Execute Stage.
 
-![Execute](Images/ALU.png)
+![7](https://user-images.githubusercontent.com/20563301/158003765-2411942d-e750-4753-87a1-9f5bc7cc504f.PNG)
+
 
 ## [Control Logic](codes/Branches.tlv)
 
@@ -204,7 +210,7 @@ During Decode Stage, branch target address is calculated and fed into PC mux. Be
 
 Below is snapshot from Makerchip IDE after including the control logic for branch instructions.
 
-![Control-logic](Images/Control_Logic.png)
+![8](https://user-images.githubusercontent.com/20563301/158003771-f324a6d4-2cb8-4270-976a-ba408b72653f.PNG)
 
 # Pipelined RISC-V CPU
 
@@ -228,8 +234,8 @@ Below is snapshot of pipelined CPU with a test case of assembly program which do
 *passed = |cpu/xreg[10]>>5$value == (1+2+3+4+5+6+7+8+9);
 
 ```
+![9](https://user-images.githubusercontent.com/20563301/158003776-e3cb3bd0-dc69-442a-9888-08a5220ce51a.PNG)
 
-![Pipelining_CPU](Images/Pipelining_CPU.png)
 
 ## [Load and store instructions and memory](codes/Load_Store.tlv)
 
@@ -250,7 +256,7 @@ Added test case to check fucntionality of load/store. Stored the summation of 1 
 ```
 Below is snapshot from Makerchip IDE after including load/store instructions.
 
-![Load_Store](Images/Load_Store.png)
+![10](https://user-images.githubusercontent.com/20563301/158003784-7040ddce-e1aa-4174-9bb3-d2006838b4a0.PNG)
 
 ## [Completing the RISC-V CPU](codes/Final.tlv)
 
@@ -258,7 +264,8 @@ Added Jumps and completed Instruction Decode and ALU for all instruction present
 
 Below is final Snapshot of Complete Pipelined RISC-V CPU.
 
-![Final](Images/Final.png)
+![11](https://user-images.githubusercontent.com/20563301/158003790-8aaa521a-eaf1-4130-b552-131b16623643.PNG)
+
 
 # Acknowledgements
 - [Kunal Ghosh](https://github.com/kunalg123), Co-founder, VSD Corp. Pvt. Ltd.
